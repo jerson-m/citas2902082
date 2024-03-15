@@ -4,9 +4,8 @@ public enum TipoIdentificacion {
 
     CC,
     TI,
+    CE,
     PPT,
-    CM,
-    RG
     
 }
 
