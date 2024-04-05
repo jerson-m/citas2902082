@@ -5,27 +5,40 @@ import java.time.LocalDate;
 import org.citas2902082.java.entities.enums.*;
 
 public class Paciente {
-    Integer id;
-    String nombres;
-    String apellidos;
-    TipoIdentificacion tipoIdentificacion;
-    Integer numeroIdentificacion;
-    String correoElectronico;
-    Integer celular;
-    LocalDate fechaNacimiento;
-    Double altura;
-    Double peso;
-    TipoSangre tipoSangre;
-    char factorRH;
+    private Integer id;
+    private String nombres;
+    private String apellidos;
+    private TipoIdentificacion tipoIdentificacion;
+    private Integer numeroIdentificacion;
+    private String correoElectronico;
+    private Long celular;
+    private LocalDate fechaNacimiento;
+    private Double altura;
+    private Double peso;
+    private TipoSangre tipoSangre;
+    private char factorRH;
 
     
   
-    public Paciente() {
+    public Paciente(Integer id, String nombres, String apellidos, TipoIdentificacion tipoIdentificacion,
+            Integer numeroIdentificacion, String correoElectronico, Long celular, LocalDate fechaNacimiento,
+            Double altura, Double peso, TipoSangre tipoSangre, char factorRH) {
+        this.id = id;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.tipoIdentificacion = tipoIdentificacion;
+        this.numeroIdentificacion = numeroIdentificacion;
+        this.correoElectronico = correoElectronico;
+        this.celular = celular;
+        this.fechaNacimiento = fechaNacimiento;
+        this.altura = altura;
+        this.peso = peso;
+        this.tipoSangre = tipoSangre;
+        this.factorRH = factorRH;
     }
 
-    
-
-
+    public Paciente() {
+    }
 
     public Integer getId() {
         return id;
@@ -123,7 +136,7 @@ public class Paciente {
 
 
 
-    public Integer getCelular() {
+    public long getCelular() {
         return celular;
     }
 
@@ -131,7 +144,7 @@ public class Paciente {
 
 
 
-    public void setCelular(Integer celular) {
+    public void setCelular(Long celular) {
         this.celular = celular;
     }
 
@@ -219,22 +232,6 @@ public class Paciente {
 
 
 
-    public Paciente( String nombres, String apellidos, TipoIdentificacion tipoIdentificacion,
-            Integer numeroIdentificacion, String correoElectronico, Integer celular, LocalDate fechaNacimiento,
-            Double altura, Double peso, TipoSangre tipoSangre, char factorRH) {
-       
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.tipoIdentificacion = tipoIdentificacion;
-        this.numeroIdentificacion = numeroIdentificacion;
-        this.correoElectronico = correoElectronico;
-        this.celular = celular;
-        this.fechaNacimiento = fechaNacimiento;
-        this.altura = altura;
-        this.peso = peso;
-        this.tipoSangre = tipoSangre;
-        this.factorRH = factorRH;
-    }
 
 
     

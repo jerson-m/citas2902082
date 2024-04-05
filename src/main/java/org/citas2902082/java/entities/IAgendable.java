@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public interface IAgendable {
 
     public void agendarCita(LocalDateTime fecha);
-    public void canelarCita();
+    public void cancelarCita();
     public void reagendarCita(LocalDateTime fecha);
 
 }

@@ -1,9 +1,9 @@
 package org.citas2902082.java.entities;
 
 public class Consultorio {
-    Integer id;
-    String direccion;
-    Integer numero;
+    public Integer id;
+    public String direccion;
+    public Integer numero;
 
     
     
@@ -48,12 +48,19 @@ public class Consultorio {
 
 
 
-    public Consultorio( String direccion, Integer numero) {
-        
+    public Consultorio(Integer id, String direccion, Integer numero) {
+        this.id = id;
         this.direccion = direccion;
         this.numero = numero;
     }
 
+
+
+    @Override
+    public String toString() {
+        return "Consultorio [id=" + id + ", direccion=" + direccion + ", numero=" + numero + "]";
+    }
+    
     
 
 }

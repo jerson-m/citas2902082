@@ -4,20 +4,25 @@ import java.time.LocalDateTime;
 
 public class Cita {
 
-     private LocalDateTime fecha;
-     private Paciente paciente;
-
+    protected static Integer id;
+    protected LocalDateTime fecha;
+    protected Paciente paciente;
+    protected static Consultorio consultorio;
     
     
     public Cita() {
     } 
 
 
-    public Cita(LocalDateTime fecha, Paciente paciente) {
-
+    public Cita(Integer id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio) {
+        this.id = id;
         this.fecha = fecha;
         this.paciente = paciente;
+        this.consultorio = consultorio;
     }
+
+
+
 
 
     public LocalDateTime getFecha() {
@@ -39,6 +44,17 @@ public class Cita {
         this.paciente = paciente;
     }
 
+
+    public static Consultorio getConsultorio() {
+        return consultorio;
+    }
+
+
+    public static void setConsultorio(Consultorio consultorio) {
+        Cita.consultorio = consultorio;
+    }
+
+    
 
 
     
